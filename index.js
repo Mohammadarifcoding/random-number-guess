@@ -1,5 +1,5 @@
 
-let max = 100
+let max = 10
 let min = 1
 let score = 0
 let random_number = Math.floor(Math.random()*(max - min) + min) 
