@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game</title>
+  
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-indigo-600 to-blue-400 min-h-screen flex items-center justify-center">
+
+  <div class="bg-white p-8 rounded shadow-md w-full max-w-md transform animate-fadeIn">
+    <h1 class="text-4xl font-extrabold text-center mb-6 text-indigo-600">Number Guessing Game</h1>
+    
+    <p class="text-lg mb-4 text-gray-700">Can you guess the secret number?</p>
+    
+    <div class="flex mb-4">
+      <input id="guessInput" type="number" class="w-1/2 px-4 py-2 border rounded-l focus:outline-none" placeholder="Enter your guess">
+      <button id="guessButton" class="bg-indigo-600 mr-4 text-white px-6 py-2 rounded-r hover:bg-indigo-700 focus:outline-none">Guess</button>
+      <button id="resetButton" class="bg-indigo-600 text-white px-6 py-2 rounded-r hover:bg-indigo-700 focus:outline-none">Start</button>
+    </div>
+    
+    <p id="message" class="text-center text-xl font-semibold mb-4 text-gray-800"></p>
+    
+    <p  class="text-center text-gray-600">Score: <span id="score">0</span></p>
+  </div>
+
+  <script src="/index.js"></script>
+</body>
+</html>
