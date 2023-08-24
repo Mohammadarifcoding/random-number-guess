@@ -29,7 +29,7 @@ document.getElementById('guessButton').addEventListener('click',function(){
     function theCodeMatch() {
         document.getElementById('message').innerHTML = `You guessed it right the number is ${random_number}`
         document.getElementById('guessInput').value = ""
-        document.getElementById('score').innerText = `Your score is ${100 - score}`
+        document.getElementById('score').innerText = `${100 - score}%`
     }
 
     function newFunction() {
